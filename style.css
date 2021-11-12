@@ -1,10 +1,24 @@
 /*
 Theme Name: LemusWeb
 Text Domain: LemusWeb
-Version 1.0
+Version: 1.0
 Description: None
-Tags:responsive,fancy
+Tags: responsive,fancy
 Author: Gerardo Padilla 
 Author URI: http://github.com/gerrystuff
 */
 
+body{
+    width: 100vh;
+    height: 100vh;
+    background: linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
+}
+/* .content{
+    position: absolute;
+width: 625px;
+height: 1240px;
+left: 0px;
+top: 0px;
+
+background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -221.89%, rgba(1, 94, 223, 0) -111.85%, rgba(1, 85, 203, 0) 5.87%, rgba(1, 102, 244, 0.5) 100%);
+} */
