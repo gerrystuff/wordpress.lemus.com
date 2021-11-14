@@ -1,5 +1,10 @@
 <?php
 
+function remove_admin_login_header() {
+    remove_action('wp_head', '_admin_bar_bump_cb');
+}
+add_action('get_header', 'remove_admin_login_header');
+
 function lemusweb_register_styles(){
     $version = wp_get_theme()->get( 'Version' );
     wp_enqueue_style('lemusweb-style', get_template_directory_uri() . "/style.css", array('lemusweb-bootstrap'),$version,'all');
