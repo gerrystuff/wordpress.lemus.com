@@ -45,7 +45,7 @@
 
         <div class="d-flex flex-row tc">
             <div>
-                <img src="/wp-content/themes/new-theme/assets/images/lenguage-icon.svg" class="icon lengague-icon" alt="my svg">
+                <img src="/wp-content/themes/new-theme/assets/images/lenguage-icon.svg" class="icon language-icon" alt="my svg">
             </div>
             <div>
 

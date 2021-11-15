@@ -7,7 +7,7 @@ add_action('get_header', 'remove_admin_login_header');
 
 function lemusweb_register_styles(){
     $version = wp_get_theme()->get( 'Version' );
-    wp_enqueue_style('lemusweb-style', get_template_directory_uri() . "/style.css", array('lemusweb-bootstrap'),$version,'all');
+    wp_enqueue_style('lemusweb-main-css', get_template_directory_uri() . "/style.css", array('lemusweb-bootstrap'),$version,'all');
     wp_enqueue_style('lemusweb-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", array(),"5.1.3",'all');
 }
 

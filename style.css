@@ -8,7 +8,6 @@ Author: Gerardo Padilla
 Author URI: http://github.com/gerrystuff
 */
 
-
 :root {
     --blue: #007bff;
     --indigo: #6610f2;
@@ -32,6 +31,7 @@ Author URI: http://github.com/gerrystuff
     --light: #c2c2c2;
     --lightgray: #eeeeee;
     --dark: #434242;
+    --mg-gray: #748499;
     --breakpoint-xs: 0;
     --breakpoint-sm: 576px;
     --breakpoint-md: 768px;
@@ -45,136 +45,236 @@ Author URI: http://github.com/gerrystuff
     /* Sidebar */
     --sidebar-width: 280px;
     --content-max-width: 860px;
-	--header-height: 180px;
-    --header-top-height: 20px;
-    --header-fc-width: 28%;
-    --header-sc-width: 72%;
-    --header-p-fs: 20px;
-
-
+    --header-top-height: 1.25rem;
+    --header-fc-width: 33%;
+    --header-sc-width: 67%;
+    --header-p-fs: 1rem;
+    --mg-c1-p-fs: 1.40rem;
 }
 
-
-
-*,
-*::before,
-*::after {
+*, *::before, *::after {
     box-sizing: border-box
 }
 
 html {
     line-height: 1.15;
 }
+
 body {
     color: var(--secondary);
     overflow-x: hidden
 }
 
 header {
-	width: 100vw;
-	height: var(--header-height);
+    width: 100vw;
     position: fixed;
 }
 
-header p{
-    padding-top: 10px;
+header p {
+    padding-top: 0.625rem;
     color: white;
-	font-weight: 700;
+    font-weight: 700;
     font-size: var(--header-p-fs)
+}
 
+.phone-number{
+    font-size: 1.0rem;
 }
-.icon{
-	width: 60px;
-	height: 60px;
+
+.icon {
+    width: 3rem;
+    height: 3rem;
 }
+
 .logo-icon {
-	margin-left: 50px;
-	margin-right: 50px;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
 }
 
-.phone-icon{
-	margin-right: 10px;
+.phone-icon {
+    margin-top: 0.5rem;
+    width: 2.0rem;
+    height: 2.0rem;
+    margin-right: 0.813rem;
 }
 
-
-.fc div:not(:first-child){
-	padding-top: var(--header-top-height);
-
+.fc div:not(:first-child) {
+    padding-top: var(--header-top-height);
 }
 
-.fc{
-	width: var(--header-fc-width);
-	/* background-color: red; */
-}
-.sc{
-	width: var(--header-sc-width);
-	/* background-color: #17a2b8; */
+.fc {
+    width: var(--header-fc-width);
+    /* background-color: red; */
 }
 
-.sc .fc{
+.sc {
+    width: var(--header-sc-width);
+    /* background-color: #17a2b8; */
+}
 
-	padding-top: var(--header-top-height);
+.sc .fc {
+    padding-top: var(--header-top-height);
     justify-content: space-evenly;
     width: 60%;
     /* background-color: #28a745; */
-
 }
 
-
-
 .sc .sc {
-	padding-top: var(--header-top-height);
+    padding-top: var(--header-top-height);
     justify-content: space-between;
-	/* background-color: orange; */
-	margin-top: 0;
+    /* background-color: orange; */
+    margin-top: 0;
     width: 12%;
 }
 
 .sc .tc {
     width: 30%;
     /* background-color: palevioletred; */
-	padding-top: var(--header-top-height);
+    padding-top: var(--header-top-height);
     justify-content: center;
 }
 
-.sc .tc > div {
-    margin-left: 5px;
-    margin-right: 5px;
+.sc .tc>div {
+    margin-left: 0.313rem;
+    margin-right: 0.313rem;
 }
-
 
 /* body */
 
-.content{
+.content {
     width: 100vw;
     height: 100vh;
-    
 }
 
-.bfc{
+.bfc {
     width: 30%;
     height: 100vh;
-
-    background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -204.2%, rgba(1, 94, 223, 0) -94.15%, rgba(1, 85, 203, 0) 23.57%, rgba(1, 102, 244, 0.5) 117.7%),
-    linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
-
+    background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -204.2%, rgba(1, 94, 223, 0) -94.15%, rgba(1, 85, 203, 0) 23.57%, rgba(1, 102, 244, 0.5) 117.7%), linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
 }
 
-.bfc div{
+.btxt {
     margin-top: 10rem;
-    font-size: 70px;
+    font-size: 3.375rem;
     color: white;
     white-space: pre-line;
     font-weight: 700;
-    line-height: 70px;
-    margin-left: 50px;
+    line-height: 4.375rem;
+    margin-left: 3.125rem;
     word-break: break-all;
 }
 
-.bsc{
+.bsc {
     width: 70%;
-   background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -221.89%, rgba(1, 94, 223, 0) -111.85%, rgba(1, 85, 203, 0) 5.87%, rgba(1, 102, 244, 0.5) 100%),
-    linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
+    background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -221.89%, rgba(1, 94, 223, 0) -111.85%, rgba(1, 85, 203, 0) 5.87%, rgba(1, 102, 244, 0.5) 100%), linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
+}
+
+.hero-image {
+    max-width: 100vw;
+    min-width: 100vw;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.main-glass-container {
+    border-radius: 5px;
+    position: absolute;
+    margin-left: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3.20rem;
+    height: 8.991rem;
+    width: 58.563rem;
+}
+
+.mg-c1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 40%;
+}
+
+.mg-c1-r1 {
+    display: flex;
+    border-radius: 5px 5px 0 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: var(--mg-gray);
+}
+
+.mg-c1-r1>p {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    font-size: var(--mg-c1-p-fs);
+}
+
+.mg-c1-r2 {
+    opacity: 0;
+    width: 10%;
+    height: 100%;
+}
+
+.mg-c2 {
+    padding: 0 5px 0 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 0 5px 5px 5px;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+}
+
+.mg-item{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.mg-item-d1{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.mg-item-d1 > p {
+    margin: 0 0 0 8px;
+    font-weight: 500;
+    font-size: 1.50rem;
+}
+
+
+.mg-icon{
+    width: 25.9px;
+    height: 25.9px;
+}
+
+.city-icon{
+    margin-bottom: 0.2rem;
+}
+
+.submit-btn{
+    width: 180px;
+    height: 50px;
+}
+
+.submit-btn > p {
+    font-size: 1.15rem;
+    font-weight: 500;
+    margin: 0;
+
 }
 
 
