@@ -21,6 +21,7 @@
                 <div class="mg-c1">
 
                     <div class="mg-c1-r1">
+                        <div></div>
                         <p>VENTA</p>
                         <p>RENTA</p>
                         <p>RENTA VACACIONAL</p>
@@ -72,7 +73,7 @@
 
                         <button type="button" class="btn btn-primary submit-btn">
 
-                        <p>BUSCAR</p>
+                            <p>BUSCAR</p>
 
                         </button>
                     </div>
@@ -81,9 +82,13 @@
             </div>
         </div>
 
-        <div class="bsc">
+        <div class="bsc" >
 
-            <img src="/wp-content/themes/new-theme/assets/images/hero-img.png" class="hero-image" alt="my svg">
+            <div class="hero bg" id="imageColumn">
+                <!-- <div class="sdw-renta">
+
+                </div> -->
+            </div>
 
 
         </div>

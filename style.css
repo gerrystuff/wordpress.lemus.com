@@ -8,52 +8,33 @@ Author: Gerardo Padilla
 Author URI: http://github.com/gerrystuff
 */
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 :root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #ee3577;
-    --red: #dc3545;
-    --orange: #f68e62;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #767575;
-    --gray-dark: #434242;
-    --primary: #6f42c1;
-    --secondary: #4f4f4f;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #c2c2c2;
-    --lightgray: #eeeeee;
-    --dark: #434242;
-    --mg-gray: #748499;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
+
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --mg-gray: #748499;
     /* Font Sizes */
     --font-normal: 1em;
     --font-small: 0.8125rem;
     /* Sidebar */
     --sidebar-width: 280px;
     --content-max-width: 860px;
-    --header-top-height: 1.25rem;
-    --header-fc-width: 33%;
-    --header-sc-width: 67%;
-    --header-p-fs: 1rem;
+    --header-top-height: 0.90rem;
+    --header-fc-width: 36%;
+    --header-sc-width: 64%;
+    --header-p-fs: 1.5rem;
     --mg-c1-p-fs: 1.40rem;
 }
 
 *, *::before, *::after {
     box-sizing: border-box
+}
+
+p{
+    height: fit-content;
+
 }
 
 html {
@@ -68,6 +49,7 @@ body {
 header {
     width: 100vw;
     position: fixed;
+
 }
 
 header p {
@@ -77,30 +59,65 @@ header p {
     font-size: var(--header-p-fs)
 }
 
-.phone-number{
-    font-size: 1.0rem;
-}
-
 .icon {
     width: 3rem;
     height: 3rem;
 }
 
+.hr-more-icon{
+    margin-top: 0.825rem ;
+}
 .logo-icon {
     margin-left: 3.125rem;
     margin-right: 3.125rem;
 }
-
 .phone-icon {
     margin-top: 0.5rem;
-    width: 2.0rem;
-    height: 2.0rem;
+    width: 2.6rem;
+    height: 2.6rem;
     margin-right: 0.813rem;
 }
-
-.fc div:not(:first-child) {
+.hr-contact {
     padding-top: var(--header-top-height);
+
 }
+
+.phone-number{
+    margin-top: 0.1rem;
+    font-size: 1.5rem;
+}
+
+
+.hr-nav-item{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+
+
+.hr-more-icon{
+    filter: brightness(1000);
+    width: 26.1px;
+    height: 17.19px;
+    margin-top: 1.2rem;
+    margin-left: 0.6rem;
+
+}
+
+.lng-box{
+    height: fit-content;
+    margin-top: 0.42rem;
+}
+.lng-text{
+    color: white;
+    font-weight: 700;
+    font-size: var(--header-p-fs)
+}
+
+
+
 
 .fc {
     width: var(--header-fc-width);
@@ -121,7 +138,7 @@ header p {
 
 .sc .sc {
     padding-top: var(--header-top-height);
-    justify-content: space-between;
+    justify-content: space-around;
     /* background-color: orange; */
     margin-top: 0;
     width: 12%;
@@ -139,6 +156,7 @@ header p {
     margin-right: 0.313rem;
 }
 
+
 /* body */
 
 .content {
@@ -153,27 +171,48 @@ header p {
 }
 
 .btxt {
+    font-family: "Open Sans", sans-serif;
     margin-top: 10rem;
-    font-size: 3.375rem;
+    font-size: 4.375rem;
     color: white;
     white-space: pre-line;
-    font-weight: 700;
+    font-weight:1000;
     line-height: 4.375rem;
     margin-left: 3.125rem;
     word-break: break-all;
 }
 
 .bsc {
+    display: flex;
     width: 70%;
     background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -221.89%, rgba(1, 94, 223, 0) -111.85%, rgba(1, 85, 203, 0) 5.87%, rgba(1, 102, 244, 0.5) 100%), linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
 }
 
-.hero-image {
-    max-width: 100vw;
-    min-width: 100vw;
-    min-height: 100vh;
-    max-height: 100vh;
+
+.sdw-renta{
+    height: 100px;
+    width: 190px;
+    background-color: white;
+    position: absolute;
+    left: 887.90625px;
+    top: 70px;
+    border-radius: 5px;
+    
 }
+
+.hero{
+    height: 100vh;
+    min-width: 100vh;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+}
+
+.bg{
+background-image: url("/wp-content/themes/new-theme/assets/images/hero-img.png");
+}
+
 
 .main-glass-container {
     border-radius: 5px;
@@ -181,7 +220,7 @@ header p {
     margin-left: 3.125rem;
     display: flex;
     flex-direction: column;
-    margin-top: 3.20rem;
+    margin-top: 4.60rem;
     height: 8.991rem;
     width: 58.563rem;
 }
@@ -276,5 +315,6 @@ header p {
     margin: 0;
 
 }
+
 
 
