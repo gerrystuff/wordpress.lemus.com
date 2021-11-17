@@ -1,51 +1,51 @@
 
 
 
-class Hero {
-    constructor() {
+// class Hero {
+//     constructor() {
         
-        this.selectRent = false;
+//         this.selectRent = false;
 
-        this.sdwRentaLabel;
-        this.rentaSelect;
-        this.heroBG;
-        this.sdwRenta;
-        this.init();
-    }
+//         this.sdwRentaLabel;
+//         this.rentaSelect;
+//         this.heroBG;
+//         this.sdwRenta;
+//         this.init();
+//     }
 
-    init() {
-        this.sdwRentaLabel = document.getElementById("#sdw-renta-lb").getBoundingClientRect();
-        this.rentaSelect = document.getElementById("#rentaMore");
-        this.heroBG =  document.getElementsByClassName("hero bg");
+//     init() {
+//         this.sdwRentaLabel = document.getElementById("#sdw-renta-lb").getBoundingClientRect();
+//         this.rentaSelect = document.getElementById("#rentaMore");
+//         this.heroBG =  document.getElementsByClassName("hero bg");
 
-        this.createElements();
-        this.addListeners();
-    }
+//         this.createElements();
+//         this.addListeners();
+//     }
 
-    createElements(){
-        this.sdwRenta = document.createElement('div');
-        this.sdwRenta.classList.add("sdw-renta");
-    }
+//     createElements(){
+//         this.sdwRenta = document.createElement('div');
+//         this.sdwRenta.classList.add("sdw-renta");
+//     }
 
 
-    addListeners() {
+//     addListeners() {
 
-        this.rentaSelect.addEventListener("click", (event) => {
-            event.preventDefault();
+//         this.rentaSelect.addEventListener("click", (event) => {
+//             event.preventDefault();
 
-            this.heroBG[0].appendChild(this.sdwRenta);
+//             this.heroBG[0].appendChild(this.sdwRenta);
 
-            this.selectRent = true;
+//             this.selectRent = true;
             
-            console.log("click ")
-        });
+//             console.log("click ")
+//         });
 
-    }
+//     }
 
 
 
-}
+// }
 
-const hero = new Hero();
+// const hero = new Hero();
 
 
