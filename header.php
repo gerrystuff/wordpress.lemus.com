@@ -13,7 +13,7 @@
 
     <!-- Bootstrap CSS-->
     <!-- Theme CSS -->
-    <?php wp_head();?>
+    <?php wp_head(); ?>
 
 </head>
 
@@ -31,15 +31,34 @@
 
 
     <div class="d-flex flex-row sc ">
-        <div class="d-flex flex-row fc">
+        <div class="d-flex flex-row fc nav-items" >
             <p>ZONAS</p>
-            <div id="#sdw-renta-lb" class="hr-nav-item">
-                <p>RENTA</p>
-                <img src="/wp-content/themes/new-theme/assets/images/more-icon.svg" id="#rentaMore" class="hr-more-icon">
-            </div>
+
+                <div id="#sdw-renta-lb" class="hr-nav-item renta-item"  >
+                    <p>RENTA</p>
+                    <img src="/wp-content/themes/new-theme/assets/images/more-icon.svg" id="#rentaMore" class="hr-more-icon">
+
+
+                    <div class="menu-box">
+                        <div>
+                            <ul>
+                                <a href="https://www.w3schools.com/"><li>Casas y Condominios</li></a>
+                                <li>Terrenos</li>
+                                <li>Edificios</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
             <div class="hr-nav-item">
                 <p>VENTA</p>
-                <img src="/wp-content/themes/new-theme/assets/images/more-icon.svg"   class="hr-more-icon">
+                <img src="/wp-content/themes/new-theme/assets/images/more-icon.svg" class="hr-more-icon">
             </div>
             <p>NOSOTROS</p>
         </div>
@@ -51,11 +70,10 @@
 
         <div class="d-flex flex-row tc">
             <div>
-                <img src="/wp-content/themes/new-theme/assets/images/lenguage-icon.svg" class="icon language-icon"
-                    alt="my svg">
+                <img src="/wp-content/themes/new-theme/assets/images/lenguage-icon.svg" class="icon language-icon" alt="my svg">
             </div>
             <div class="lng-box">
-                <span class="lng-text">LANGUAGE</span> 
+                <span class="lng-text">LANGUAGE</span>
             </div>
         </div>
 

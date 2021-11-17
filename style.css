@@ -9,9 +9,7 @@ Author URI: http://github.com/gerrystuff
 */
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 :root {
-
     --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --mg-gray: #748499;
@@ -28,13 +26,14 @@ Author URI: http://github.com/gerrystuff
     --mg-c1-p-fs: 1.40rem;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box
 }
 
-p{
+p {
     height: fit-content;
-
 }
 
 html {
@@ -49,7 +48,6 @@ body {
 header {
     width: 100vw;
     position: fixed;
-
 }
 
 header p {
@@ -64,60 +62,88 @@ header p {
     height: 3rem;
 }
 
-.hr-more-icon{
-    margin-top: 0.825rem ;
+.hr-more-icon {
+    margin-top: 0.825rem;
 }
+
 .logo-icon {
     margin-left: 3.125rem;
     margin-right: 3.125rem;
 }
+
 .phone-icon {
     margin-top: 0.5rem;
     width: 2.6rem;
     height: 2.6rem;
     margin-right: 0.813rem;
 }
+
 .hr-contact {
     padding-top: var(--header-top-height);
-
 }
 
-.phone-number{
+.phone-number {
     margin-top: 0.1rem;
     font-size: 1.5rem;
 }
 
 
-.hr-nav-item{
+/****************************************************************************/
+
+.menu-box {
+    display: block;
+    position: absolute;
+    margin-top: 3.35%;
+    width: 18.5%;
+    height: 150%;
+    background-color: white;
+    color: black;
+    border-radius: 4.2654px;
+    box-shadow: 0px 5.11848px 17.0616px rgba(0, 0, 0, 0.2);
+    font-family: 'Open Sans';
+    font-size: 30.7109px;
+    line-height: 4rem;
+    letter-spacing: 0.166561px;
+    display: none;
+}
+
+.menu-box ul {
+    list-style: none;
+    padding-left: 5%;
+}
+
+.nav-items .renta-item:active .menu-box {
+    display: block;
+}
+
+
+/****************************************************************************/
+
+.hr-nav-item {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: start;
 }
 
-
-
-.hr-more-icon{
+.hr-more-icon {
     filter: brightness(1000);
     width: 26.1px;
     height: 17.19px;
     margin-top: 1.2rem;
     margin-left: 0.6rem;
-
 }
 
-.lng-box{
+.lng-box {
     height: fit-content;
     margin-top: 0.42rem;
 }
-.lng-text{
+
+.lng-text {
     color: white;
     font-weight: 700;
     font-size: var(--header-p-fs)
 }
-
-
-
 
 .fc {
     width: var(--header-fc-width);
@@ -176,7 +202,7 @@ header p {
     font-size: 4.375rem;
     color: white;
     white-space: pre-line;
-    font-weight:1000;
+    font-weight: 1000;
     line-height: 4.375rem;
     margin-left: 3.125rem;
     word-break: break-all;
@@ -188,8 +214,7 @@ header p {
     background: linear-gradient(137.33deg, rgba(1, 77, 183, 0.5) -221.89%, rgba(1, 94, 223, 0) -111.85%, rgba(1, 85, 203, 0) 5.87%, rgba(1, 102, 244, 0.5) 100%), linear-gradient(323.06deg, #080C0C 0%, #333333 100%);
 }
 
-
-.sdw-renta{
+.sdw-renta {
     height: 100px;
     width: 190px;
     background-color: white;
@@ -197,22 +222,20 @@ header p {
     left: 887.90625px;
     top: 70px;
     border-radius: 5px;
-    
 }
 
-.hero{
+.hero {
     height: 100vh;
     min-width: 100vh;
     flex: 1;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
-.bg{
-background-image: url("/wp-content/themes/new-theme/assets/images/hero-img.png");
+.bg {
+    background-image: url("/wp-content/themes/new-theme/assets/images/hero-img.png");
 }
-
 
 .main-glass-container {
     border-radius: 5px;
@@ -270,7 +293,7 @@ background-image: url("/wp-content/themes/new-theme/assets/images/hero-img.png")
     background-color: white;
 }
 
-.mg-item{
+.mg-item {
     width: 100%;
     height: 100%;
     display: flex;
@@ -280,41 +303,35 @@ background-image: url("/wp-content/themes/new-theme/assets/images/hero-img.png")
     align-items: center;
 }
 
-
-.mg-item-d1{
+.mg-item-d1 {
     display: flex;
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
 
-.mg-item-d1 > p {
+.mg-item-d1>p {
     margin: 0 0 0 8px;
     font-weight: 500;
     font-size: 1.50rem;
 }
 
-
-.mg-icon{
+.mg-icon {
     width: 25.9px;
     height: 25.9px;
 }
 
-.city-icon{
+.city-icon {
     margin-bottom: 0.2rem;
 }
 
-.submit-btn{
+.submit-btn {
     width: 180px;
     height: 50px;
 }
 
-.submit-btn > p {
+.submit-btn>p {
     font-size: 1.15rem;
     font-weight: 500;
     margin: 0;
-
 }
-
-
-
