@@ -42,13 +42,19 @@ html {
 
 body {
     color: var(--secondary);
-    overflow-x: hidden
+    overflow-x: hidden;
+    
 }
 
 header {
     width: 100vw;
-    position: fixed;
+    position: absolute;
 }
+
+.content {
+}
+
+
 
 header p {
     padding-top: 0.625rem;
@@ -87,15 +93,19 @@ header p {
     font-size: 1.5rem;
 }
 
+.lng-icon {
+    margin: 0 0 1.65rem 0 ;
+
+}
+
 
 /****************************************************************************/
 
 .menu-box {
-    display: block;
+  
     position: absolute;
     margin-top: 3.35%;
     width: 18.5%;
-    height: 150%;
     background-color: white;
     color: black;
     border-radius: 4.2654px;
@@ -104,6 +114,32 @@ header p {
     font-size: 30.7109px;
     line-height: 4rem;
     letter-spacing: 0.166561px;
+}
+
+.menu-box-venta{
+    width: 20.5%;
+}
+
+.menu-box-lng {
+    margin-top: 0.15%;
+    width: 8.5%;
+
+}
+
+.menu-box-lng ul {
+    margin-left: 10px;
+    
+}
+
+.renta-items-off{
+    display: none;
+}
+
+.venta-items-off{
+    display: none;
+}
+
+.lng-items-off {
     display: none;
 }
 
@@ -112,10 +148,11 @@ header p {
     padding-left: 5%;
 }
 
-.nav-items .renta-item:active .menu-box {
-    display: block;
-}
 
+.lng-box {
+    height: fit-content;
+    margin-top: 0.2rem;
+}
 
 /****************************************************************************/
 
@@ -124,6 +161,7 @@ header p {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: start;
+    height: fit-content;
 }
 
 .hr-more-icon {
@@ -134,10 +172,6 @@ header p {
     margin-left: 0.6rem;
 }
 
-.lng-box {
-    height: fit-content;
-    margin-top: 0.42rem;
-}
 
 .lng-text {
     color: white;
@@ -172,6 +206,7 @@ header p {
 
 .sc .tc {
     width: 30%;
+    height: fit-content;
     /* background-color: palevioletred; */
     padding-top: var(--header-top-height);
     justify-content: center;
@@ -185,10 +220,7 @@ header p {
 
 /* body */
 
-.content {
-    width: 100vw;
-    height: 100vh;
-}
+
 
 .bfc {
     width: 30%;
@@ -334,4 +366,13 @@ header p {
     font-size: 1.15rem;
     font-weight: 500;
     margin: 0;
+}
+
+/** CONTENT 2 **/
+
+
+.content2{
+
+    height: 100vh;
+
 }

@@ -1,51 +1,83 @@
 
 
 
-// class Hero {
-//     constructor() {
+class Hero {
+    constructor() {
+        this.selectDropDownRenta;
+        this.selectDropDownRentaItems;
+
+        this.selectDropDownVenta;
+        this.selectDropDownVentaItems;
+
+        this.selectDropDownLenguage;
+        this.selectDropDownLenguageItems;
+
         
-//         this.selectRent = false;
+        this.init();
+    }
 
-//         this.sdwRentaLabel;
-//         this.rentaSelect;
-//         this.heroBG;
-//         this.sdwRenta;
-//         this.init();
-//     }
+    init() {
 
-//     init() {
-//         this.sdwRentaLabel = document.getElementById("#sdw-renta-lb").getBoundingClientRect();
-//         this.rentaSelect = document.getElementById("#rentaMore");
-//         this.heroBG =  document.getElementsByClassName("hero bg");
+        this.selectDropDownRenta            = document.getElementById("#sdb-renta");
+        this.selectDropDownRentaItems       = document.getElementById("#sdb-renta-items");
 
-//         this.createElements();
-//         this.addListeners();
-//     }
+        this.selectDropDownVenta            = document.getElementById("#sdb-venta");
+        this.selectDropDownVentaItems       = document.getElementById("#sdb-venta-items");
 
-//     createElements(){
-//         this.sdwRenta = document.createElement('div');
-//         this.sdwRenta.classList.add("sdw-renta");
-//     }
+        this.selectDropDownLenguage         = document.getElementById("#sdb-lng");
+        this.selectDropDownLenguageItems    = document.getElementById("#sdb-lng-items");
 
 
-//     addListeners() {
+        this.addListeners();
+    }
 
-//         this.rentaSelect.addEventListener("click", (event) => {
-//             event.preventDefault();
+    createElements() {
 
-//             this.heroBG[0].appendChild(this.sdwRenta);
+    }
 
-//             this.selectRent = true;
-            
-//             console.log("click ")
-//         });
+    addListeners() {
 
-//     }
+        document.body.addEventListener('click', (event) => {
+            if (
+                event.target == this.selectDropDownRentaItems 
+                || 
+                event.target == this.selectDropDownVentaItems
+                ||
+                event.target == this.selectDropDownLenguageItems
+                )
+
+                return;
+
+            this.selectDropDownRentaItems.classList.add("renta-items-off");
+            this.selectDropDownVentaItems.classList.add("venta-items-off");
+            this.selectDropDownLenguageItems.classList.add("lng-items-off");
 
 
 
-// }
+        }, true);
 
-// const hero = new Hero();
+        this.selectDropDownRenta.addEventListener("click", (event) => {
+            event.preventDefault();
+            this.selectDropDownRentaItems.classList.remove("renta-items-off");
+        });
+
+        this.selectDropDownVenta.addEventListener("click", (event) => {
+            event.preventDefault();
+            this.selectDropDownVentaItems.classList.remove("venta-items-off");
+        });
+
+        this.selectDropDownLenguage.addEventListener("click", (event) => {
+            event.preventDefault();
+            console.log("ok");
+            this.selectDropDownLenguageItems.classList.remove("lng-items-off");
+        });
+
+    }
+
+
+
+}
+
+const hero = new Hero();
 
 
